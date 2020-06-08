@@ -12,8 +12,8 @@ function renderDogs(json) {
   const main = document.getElementById('dog-image-container')
 
   for (const element of json.values) {
-    const image = document.createElement('image')
-    image.innerHTML = element
+    const image = document.createElement('img')
+    image.src = element
     main.appendChild(image)
   }
 }
