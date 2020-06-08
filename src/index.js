@@ -18,6 +18,10 @@ function renderDogPics(dogPic) {
   main.appendChild(image)
 }
 
+function fetchDogBreeds() {
+  
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   fetchDogPics()
   fetchDogBreeds()
