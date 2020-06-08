@@ -8,6 +8,7 @@ function fetchDogPics() {
   fetch(imgUrl)
     .then(response => response.json())
     .then(json => {
+      console.log(typeof json.message)
       json.message.forEach(image => renderDogPics(image))
     })
 }
