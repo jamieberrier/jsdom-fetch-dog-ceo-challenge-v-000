@@ -33,6 +33,9 @@ function renderDogBreeds(breedArray) {
   const t = typeof breedArray
   console.log(t)
   const ul = document.getElementById('dog-breeds')
+  for (const key in breedArray) {
+    console.log(breedArray[key]);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
