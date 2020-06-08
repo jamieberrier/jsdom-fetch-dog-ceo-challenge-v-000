@@ -1,6 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 
-function fetchDogs() {
+function fetchDogPics() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 
   fetch(imgUrl)
@@ -10,7 +10,7 @@ function fetchDogs() {
     })
 }
 
-function renderDogs(dogPic) {
+function renderDogPics(dogPic) {
   const main = document.getElementById('dog-image-container')
 
   const image = document.createElement('img')
@@ -19,5 +19,5 @@ function renderDogs(dogPic) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetchDogs()
+  fetchDogPics()
 })
