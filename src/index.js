@@ -44,8 +44,8 @@ function renderDogBreeds(breedsObject) {
   }
 }
 
-function changeColor() {
-
+function changeColor(event) {
+  event.target.style.color = 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
