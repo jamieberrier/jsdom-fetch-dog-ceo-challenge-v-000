@@ -30,7 +30,8 @@ function fetchDogBreeds() {
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds(breedArray) {
-  console.log(typeOf breedArray)
+  const t = typeof breedArray
+  console.log(t)
   const ul = document.getElementById('dog-breeds')
 }
 
