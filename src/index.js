@@ -35,7 +35,7 @@ function renderDogBreeds(breedArray) {
   const ul = document.getElementById('dog-breeds')
   const li = document.createElement('li')
 
-  for (const key in breeds) {
+  for (const key of breeds) {
     li.innerText = breeds[key]
     ul.appendChild(li)
   }
