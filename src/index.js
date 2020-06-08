@@ -45,7 +45,7 @@ function renderDogBreeds(breedsObject) {
 }
 
 function changeColor(event) {
-  event.target.style.color = 
+  event.target.style.color = 'DeepPink'
 }
 
 document.addEventListener('DOMContentLoaded', function() {
