@@ -2,9 +2,6 @@ console.log('%c HI', 'color: firebrick')
 
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 
-document.addEventListener('DOMContentLoaded', function() {
-  fetchDogs()
-})
 function fetchDogs() {
   fetch(imgUrl)
   .then(response => response.json())
@@ -20,6 +17,10 @@ function renderDogs(json) {
     main.appendChild(image)
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  fetchDogs()
+})
 /*
 function renderBooks(json) {
   const main = document.querySelector('main')
