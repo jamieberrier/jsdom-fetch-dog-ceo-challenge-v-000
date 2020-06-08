@@ -34,6 +34,7 @@ function fetchDogBreeds() {
       breeds = Object.keys(json.message)
       // display all dog breeds on page
       renderDogBreeds(breeds)
+      // filter breeds that start with a particular letter
       addBreedSelectListener()
     })
 }
@@ -62,7 +63,7 @@ function changeColor(event) {
 // add JavaScript so that the user can filter breeds that start with a particular letter using a dropdown.
 function addBreedSelectListener() {
   const dropDown = document.getElementById('breed-dropdown')
-  
+
   dropDown.addEventListener('change', updateBreedList)
 }
 
