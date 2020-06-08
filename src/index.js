@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   fetch(imgUrl)
   .then(response => response.json())
   .then(json => {
-    
+
   })
 })
