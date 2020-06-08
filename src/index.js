@@ -65,6 +65,7 @@ function addBreedSelectListener() {
 function updateBreedList(event) {
   console.log(event.target.value)
   // update ul with breeds that start with event.target.value
+  removeChildren(ul)
 }
 
 document.addEventListener('DOMContentLoaded', function() {
