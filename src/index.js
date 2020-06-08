@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
   .then(json => console.log(json))
 })
 
-/*function renderDogs(json) {
+function renderDogs(json) {
   const main = document.getElementById('dog-image-container')
 
-  json.for (const element of json) {
+  json.for (const element of json.values) {
     const image = document.createElement('image')
     image.innerHTML =
     main.appendChild(image)
   }
-}*/
+}
 /*
 function renderBooks(json) {
   const main = document.querySelector('main')
