@@ -10,6 +10,7 @@ function fetchDogPics() {
     })
 }
 
+// add image elements to the DOM for each🤔 image in the array
 function renderDogPics(dogPic) {
   const main = document.getElementById('dog-image-container')
 
@@ -18,6 +19,7 @@ function renderDogPics(dogPic) {
   main.appendChild(image)
 }
 
+// on page load, fetch all the dog breeds using the url
 function fetchDogBreeds() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl)
