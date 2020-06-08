@@ -1,7 +1,5 @@
 console.log('%c HI', 'color: firebrick')
 
-const ul = document.getElementById('dog-breeds')
-
 // on page load, fetch the images using the url, parse the response as JSON
 function fetchDogPics() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
@@ -38,6 +36,8 @@ function fetchDogBreeds() {
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds(breeds) {
+  const ul = document.getElementById('dog-breeds')
+
   for (breed of breeds) {
     const li = document.createElement('li')
 
@@ -66,7 +66,7 @@ function updateBreedList(event) {
   console.log(event.target.value)
   // update ul with breeds that start with event.target.value
   // removeChildren(ul)
-  ul.querySelectorAll('*').forEach(n => n.remove());
+  node.querySelectorAll('*').forEach(n => n.remove());
 }
 
 document.addEventListener('DOMContentLoaded', function() {
