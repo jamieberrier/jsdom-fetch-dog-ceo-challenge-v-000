@@ -23,6 +23,7 @@ function renderDogPics(dogPic) {
 // on page load, fetch all the dog breeds using the url
 function fetchDogBreeds() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
+  
   fetch(breedUrl)
     .then(response => response.json())
     .then(json => renderDogBreeds(json.message))
@@ -37,7 +38,7 @@ function renderDogBreeds(breedsObject) {
 
   for (breed of breeds) {
     const li = document.createElement('li')
-    
+
     li.innerText = breed
     ul.appendChild(li)
   }
