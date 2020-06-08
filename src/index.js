@@ -66,7 +66,7 @@ function updateBreedList(event) {
   console.log(event.target.value)
   // update ul with breeds that start with event.target.value
   // removeChildren(ul)
-  node.querySelectorAll('*').forEach(n => n.remove());
+  ul.querySelectorAll('*').forEach(n => n.remove());
 }
 
 document.addEventListener('DOMContentLoaded', function() {
