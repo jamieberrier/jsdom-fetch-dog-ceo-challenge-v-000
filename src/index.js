@@ -5,13 +5,19 @@ const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 function fetchDogs() {
   fetch(imgUrl)
   .then(response => response.json())
-  .then(json => renderDogs(json))
+  .then(json => {
+    json.messages.forEach(image => renderDogs(image))
+  })
 }
 
 function renderDogs(json) {
-  const main = document.getElementById('dog-image-container')
 
-  json.messages.forEach(image => addImage(image))
+
+
+}
+
+function addImage(image) {
+  const main = document.getElementById('dog-image-container')
   /*for (const element of json.values) {
     const image = document.createElement('img')
     image.src = element
