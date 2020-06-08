@@ -11,11 +11,11 @@ function fetchDogs() {
 function renderDogs(json) {
   const main = document.getElementById('dog-image-container')
 
-  for (const element of json.values) {
+  /*for (const element of json.values) {
     const image = document.createElement('img')
     image.src = element
     main.appendChild(image)
-  }
+  }*/
 }
 
 document.addEventListener('DOMContentLoaded', function() {
