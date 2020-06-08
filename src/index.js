@@ -7,7 +7,7 @@ function fetchDogPics() {
   fetch(imgUrl)
     .then(response => response.json())
     .then(json => {
-      json.message.forEach(image => renderDogs(image))
+      json.message.forEach(image => renderDogPics(image))
     })
 }
 
