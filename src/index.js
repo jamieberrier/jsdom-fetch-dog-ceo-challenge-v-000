@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function renderDogs(json) {
   const main = document.getElementById('dog-image-container')
   json.for (const element of json) {
-
+    const image = document.createElement('image')
   }
 }
 /*
