@@ -10,7 +10,7 @@ function fetchDogPics() {
     .then(json => {
       console.log(typeof json.message)
       for (const image in json.message) {
-        image => renderDogPics(image))
+        renderDogPics(json.message[image])
       }
       //json.message.forEach(image => renderDogPics(image))
     })
