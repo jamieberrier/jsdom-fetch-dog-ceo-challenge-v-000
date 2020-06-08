@@ -9,5 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function renderDogs(json) {
-  const main = document.querySelector('main')
+  const main = document.getElementById('dog-image-container')
 }
