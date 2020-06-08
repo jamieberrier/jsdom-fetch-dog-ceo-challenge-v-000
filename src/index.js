@@ -74,7 +74,8 @@ function updateBreedList(event) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const breedsList = document.getElementById('dog-breeds')
+  const breedsList = document.getElementById('dog-breeds');
+  
   fetchDogPics()
   fetchDogBreeds()
 })
