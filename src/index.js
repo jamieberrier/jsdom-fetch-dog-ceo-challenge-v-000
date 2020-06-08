@@ -67,11 +67,11 @@ function addBreedSelectListener() {
 
 // For example, if the user selects 'a' in the dropdown, only show the breeds with names that start with the letter a.
 function updateBreedList(event) {
-  // update ul with breeds that start with event.target.value
   // get the <ul>
   const breedsList = document.getElementById('dog-breeds')
   // remove existing <li>
   breedsList.querySelectorAll('li').forEach(n => n.remove());
+  // update ul with breeds that start with event.target.value
   renderDogBreeds(breeds.filter(breed => breed.startsWith(event.target.value)));
 }
 
