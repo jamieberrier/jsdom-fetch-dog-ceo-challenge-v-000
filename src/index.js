@@ -10,8 +10,8 @@ function fetchDogs() {
 
 function renderDogs(json) {
   const main = document.getElementById('dog-image-container')
-  console.log(json)
 
+  json.messages.forEach(image => addImage(image))
   /*for (const element of json.values) {
     const image = document.createElement('img')
     image.src = element
