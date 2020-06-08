@@ -1,6 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 let breeds = []
-const breedsList = document.getElementById('dog-breeds')
+const breedsList = document.querySelect('#dog-breeds')
 
 // on page load, fetch the images using the url, parse the response as JSON
 function fetchDogPics() {
