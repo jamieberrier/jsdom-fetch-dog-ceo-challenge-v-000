@@ -71,7 +71,7 @@ function updateBreedList(event) {
   const breedsList = document.getElementById('dog-breeds')
   // remove existing <li>
   breedsList.querySelectorAll('li').forEach(n => n.remove());
-  // update ul with breeds that start with event.target.value
+  // update <ul> with breeds that start with event.target.value
   renderDogBreeds(breeds.filter(breed => breed.startsWith(event.target.value)));
 }
 
