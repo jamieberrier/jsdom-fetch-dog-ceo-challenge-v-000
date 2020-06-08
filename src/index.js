@@ -56,7 +56,7 @@ function changeColor(event) {
 }
 
 function addBreedSelectListener() {
-  
+  const dropDown = document.getElementById('breed-dropdown')
 }
 
 // Once we are able to load all of the dog breeds onto the page, add JavaScript so that the user can filter breeds that start with a particular letter using a dropdown.
