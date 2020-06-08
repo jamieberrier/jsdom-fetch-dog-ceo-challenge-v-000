@@ -24,11 +24,15 @@ function renderDogPics(dogPic) {
 function fetchDogBreeds() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl)
+    .then(response => response.json())
+    .then(json => {
+      
+    })
 }
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds() {
-  
+
 }
 
 document.addEventListener('DOMContentLoaded', function() {
