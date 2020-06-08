@@ -10,11 +10,11 @@ function fetchDogs() {
   })
 }
 
-function renderDogs(image) {
+function renderDogs(dogPic) {
   const main = document.getElementById('dog-image-container')
 
   const image = document.createElement('img')
-  image.src = element
+  image.src = dogPic
   main.appendChild(image)
 }
 
