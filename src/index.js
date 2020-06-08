@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function renderDogs(json) {
-  for (const element of myArray) {
+  for (const element of json) {
     console.log(element);
   }
 }
