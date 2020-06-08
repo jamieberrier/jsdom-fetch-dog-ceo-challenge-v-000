@@ -33,6 +33,7 @@ function renderDogBreeds(breedArray) {
   const breeds = Object.keys(breedArray)
 
   const ul = document.getElementById('dog-breeds')
+  const li = document.createElement('li')
 
   for (const key in breeds) {
     console.log(breeds[key]);
