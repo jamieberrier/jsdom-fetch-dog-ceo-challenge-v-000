@@ -11,7 +11,6 @@ function fetchDogPics() {
       for (const image in json.message) {
         renderDogPics(json.message[image])
       }
-      //json.message.forEach(image => renderDogPics(image))
     })
 }
 
