@@ -37,6 +37,7 @@ function renderDogBreeds(breedsObject) {
 
   for (breed of breeds) {
     const li = document.createElement('li')
+    
     li.innerText = breed
     ul.appendChild(li)
   }
