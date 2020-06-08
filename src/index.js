@@ -29,15 +29,14 @@ function fetchDogBreeds() {
   fetch(breedUrl)
     .then(response => response.json())
     .then(json => {
-      renderDogBreeds(json.message)
+      // the return value is an Array containing all of the keys at the top level of the Object
+      const breeds = Object.keys(json.message)
+      renderDogBreeds(breeds)
     })
 }
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds(breedsObject) {
-  // the return value is an Array containing all of the keys at the top level of the Object
-  const breeds = Object.keys(breedsObject)
-
   for (breed of breeds) {
     const li = document.createElement('li')
 
