@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   .then(json => console.log(json))
 })
 
-function renderDogs(json) {
+/*function renderDogs(json) {
   const main = document.getElementById('dog-image-container')
 
   json.for (const element of json) {
@@ -16,7 +16,7 @@ function renderDogs(json) {
     image.innerHTML =
     main.appendChild(image)
   }
-}
+}*/
 /*
 function renderBooks(json) {
   const main = document.querySelector('main')
