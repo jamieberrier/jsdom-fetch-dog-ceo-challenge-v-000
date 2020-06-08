@@ -55,7 +55,7 @@ function changeColor(event) {
   event.target.style.color = 'DeepPink'
 }
 
-//Once we are able to load all of the dog breeds onto the page,
+// Once we are able to load all of the dog breeds onto the page,
 // add JavaScript so that the user can filter breeds that start with a particular letter using a dropdown.
 function addBreedSelectListener() {
   const dropDown = document.getElementById('breed-dropdown')
