@@ -30,7 +30,7 @@ function fetchDogBreeds() {
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds() {
-
+  const ul = document.getElementById('dog-breeds')
 }
 
 document.addEventListener('DOMContentLoaded', function() {
