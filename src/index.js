@@ -68,7 +68,6 @@ function addBreedSelectListener() {
 function updateBreedList(event) {
   // update ul with breeds that start with event.target.value
   const breedsList = document.getElementById('dog-breeds')
-  console.log(breedsList)
   breedsList.querySelectorAll('li').forEach(n => n.remove());
   renderDogBreeds(breeds.filter(breed => breed.startsWith(event.target.value)));
 }
