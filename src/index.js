@@ -28,7 +28,9 @@ function fetchDogBreeds() {
 
   fetch(breedUrl)
     .then(response => response.json())
-    .then(json => renderDogBreeds(json.message))
+    .then(json => {
+      renderDogBreeds(json.message)
+    })
 }
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
