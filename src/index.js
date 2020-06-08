@@ -67,6 +67,7 @@ function updateBreedList(event) {
   // removeChildren(ul)
   const ul = document.getElementById('dog-breeds')
   ul.querySelectorAll('li').forEach(n => n.remove());
+  renderDogBreeds(breeds.filter(breed => breed.startsWith(event.target.value)));
 }
 
 document.addEventListener('DOMContentLoaded', function() {
