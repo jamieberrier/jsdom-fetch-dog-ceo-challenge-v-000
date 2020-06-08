@@ -40,6 +40,7 @@ function renderDogBreeds(breedsObject) {
 
     li.innerText = breed
     ul.appendChild(li)
+    li.addEventListener('click', changeColor)
   }
 }
 
