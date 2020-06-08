@@ -32,7 +32,7 @@ function fetchDogBreeds() {
       // the return value is an Array containing all of the keys at the top level of the Object
       const breeds = Object.keys(json.message)
       renderDogBreeds(breeds)
-      // add listener
+      // addBreedSelectListener()
     })
 }
 
