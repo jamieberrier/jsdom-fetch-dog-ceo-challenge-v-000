@@ -20,4 +20,5 @@ function renderDogPics(dogPic) {
 
 document.addEventListener('DOMContentLoaded', function() {
   fetchDogPics()
+  fetchDogBreeds()
 })
