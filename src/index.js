@@ -25,9 +25,7 @@ function fetchDogBreeds() {
   const breedUrl = 'https://dog.ceo/api/breeds/list/all'
   fetch(breedUrl)
     .then(response => response.json())
-    .then(json => {
-      
-    })
+    .then(json => console.log(json))
 }
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
