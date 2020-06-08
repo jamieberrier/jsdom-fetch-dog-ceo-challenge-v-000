@@ -26,6 +26,11 @@ function fetchDogBreeds() {
   fetch(breedUrl)
 }
 
+// add the breeds to the page in an <ul> (take a look at the included index.html)
+function renderDogBreeds() {
+  
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   fetchDogPics()
   fetchDogBreeds()
