@@ -38,6 +38,7 @@ function renderDogBreeds(breedArray) {
   for (const key in breeds) {
     //console.log(breeds[key]);
     li.innerText = breeds[key]
+    ul.appendChild(li)
   }
 }
 
