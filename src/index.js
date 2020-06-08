@@ -1,5 +1,7 @@
 console.log('%c HI', 'color: firebrick')
 
+const ul = document.getElementById('dog-breeds');
+
 // on page load, fetch the images using the url, parse the response as JSON
 function fetchDogPics() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
