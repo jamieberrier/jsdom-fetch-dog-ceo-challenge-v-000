@@ -37,7 +37,6 @@ function fetchDogBreeds() {
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds(breeds) {
   const ul = document.getElementById('dog-breeds')
-  //removeChildren(ul)
 
   for (breed of breeds) {
     const li = document.createElement('li')
