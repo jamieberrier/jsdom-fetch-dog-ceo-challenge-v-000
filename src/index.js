@@ -67,7 +67,7 @@ function addBreedSelectListener() {
 function updateBreedList(event) {
   // update ul with breeds that start with event.target.value
   // removeChildren(ul)
-  const ul = document.getElementById('dog-breeds')
+  //const ul = document.getElementById('dog-breeds')
   ul.querySelectorAll('li').forEach(n => n.remove());
 }
 
