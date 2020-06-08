@@ -30,16 +30,15 @@ function fetchDogBreeds() {
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds(breedArray) {
+  // the return value is an Array containing all of the keys at the top level of the Object
   const breeds = Object.keys(breedArray)
 
   const ul = document.getElementById('dog-breeds')
   const li = document.createElement('li')
 
-  for (const key in breeds) {
-    console.log(breeds.key)
-    li.innerText = breeds[key]
-    ul.appendChild(li)
-  }
+
+  //li.innerText = breeds[key]
+  //ul.appendChild(li)
 }
 
 document.addEventListener('DOMContentLoaded', function() {
