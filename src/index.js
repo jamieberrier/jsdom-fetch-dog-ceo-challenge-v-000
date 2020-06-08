@@ -10,7 +10,7 @@ function fetchDogs() {
   })
 }
 
-function renderDogs(json) {
+function renderDogs(image) {
   const main = document.getElementById('dog-image-container')
 
   const image = document.createElement('img')
