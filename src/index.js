@@ -33,9 +33,9 @@ function renderDogBreeds(breedArray) {
   const breeds = Object.keys(breedArray)
 
   const ul = document.getElementById('dog-breeds')
-  
-  for (const key in breedArray) {
-    console.log(breedArray[key]);
+
+  for (const key in breeds) {
+    console.log(breeds[key]);
   }
 }
 
