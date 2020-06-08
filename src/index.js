@@ -30,7 +30,6 @@ function fetchDogBreeds() {
 
 // add the breeds to the page in an <ul> (take a look at the included index.html)
 function renderDogBreeds(breedsObject) {
-  console.log(typeof breedArray)
   // the return value is an Array containing all of the keys at the top level of the Object
   const breeds = Object.keys(breedsObject)
 
