@@ -44,6 +44,10 @@ function renderDogBreeds(breedsObject) {
   }
 }
 
+function changeColor() {
+
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   fetchDogPics()
   fetchDogBreeds()
