@@ -15,7 +15,7 @@ function fetchDogPics() {
 function renderDogPics(dogPic) {
   const main = document.getElementById('dog-image-container')
   const image = document.createElement('img')
-  
+
   image.src = dogPic
   main.appendChild(image)
 }
@@ -33,7 +33,6 @@ function fetchDogBreeds() {
 function renderDogBreeds(breedsObject) {
   // the return value is an Array containing all of the keys at the top level of the Object
   const breeds = Object.keys(breedsObject)
-
   const ul = document.getElementById('dog-breeds')
 
   for (breed of breeds) {
