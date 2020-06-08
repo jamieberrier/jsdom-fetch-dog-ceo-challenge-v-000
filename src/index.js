@@ -12,7 +12,7 @@ function fetchDogs() {
 
 function renderDogs(json) {
   const main = document.getElementById('dog-image-container')
-  
+
   const image = document.createElement('img')
   image.src = element
   main.appendChild(image)
