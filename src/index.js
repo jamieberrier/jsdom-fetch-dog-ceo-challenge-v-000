@@ -2,11 +2,11 @@ console.log('%c HI', 'color: firebrick')
 
 function fetchDogs() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
-  
+
   fetch(imgUrl)
     .then(response => response.json())
     .then(json => {
-      json.messages.forEach(image => renderDogs(image))
+      json.message.forEach(image => renderDogs(image))
     })
 }
 
