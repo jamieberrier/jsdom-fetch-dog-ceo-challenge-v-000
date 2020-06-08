@@ -14,8 +14,8 @@ function fetchDogPics() {
 // add image elements to the DOM for each🤔 image in the array
 function renderDogPics(dogPic) {
   const main = document.getElementById('dog-image-container')
-
   const image = document.createElement('img')
+  
   image.src = dogPic
   main.appendChild(image)
 }
