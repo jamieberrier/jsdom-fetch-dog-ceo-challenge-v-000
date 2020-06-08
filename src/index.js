@@ -13,7 +13,7 @@ function renderDogs(json) {
   
   json.for (const element of json) {
     const image = document.createElement('image')
-    image.innerHTML =
+    image.innerHTML = 
     main.appendChild(image)
   }
 }
