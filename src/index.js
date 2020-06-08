@@ -62,6 +62,7 @@ function changeColor(event) {
 // add JavaScript so that the user can filter breeds that start with a particular letter using a dropdown.
 function addBreedSelectListener() {
   const dropDown = document.getElementById('breed-dropdown')
+  
   dropDown.addEventListener('change', updateBreedList)
 }
 
